@@ -167,12 +167,12 @@ Article 5(2) makes the controller responsible for demonstrating compliance:[^21]
 
 ## The processing ground relied on
 
-As already noted in previous sections, there are two distinct processing purposes in the operational LBT scenario. The first purpose is the participating organisation's evaluation of its own learning programmes, for which Business Monitor acts as a processor. The second purpose is Business Monitor's cross-organisational benchmarking service, which may involve Business Monitor acting as a controller. For both purposes, the processing ground relied on is legitimate interests under Article 6(1)(f) GDPR [^22]. This ground is appropriate because the processing is necessary for the legitimate interests of both the participating organisation and Business Monitor, and these interests are not overridden by the rights and freedoms of the data subjects.
+As already noted in previous sections, there are two distinct processing purposes in the operational LBT scenario. The first purpose is the participating organisation's evaluation of its own learning programmes, for which Business Monitor acts as a processor. The second purpose is Business Monitor's cross-organisational benchmarking service, which may involve Business Monitor acting as a controller. For both purposes, the processing ground relied on is legitimate interests under Article 6(1)(f) GDPR [^22]. This ground is appropriate because the processing is necessary for the legitimate interests of both the participating organisation and Business Monitor, and these interests are not overridden by the rights and freedoms of the data subjects, as required by the balancing test in Article 6(1)(f) and recital 47.[^22]
 
-The intent is for no special categories of personal data to be collected. As such, article 9 of the GDPR should not apply. However, as previously noted, there is a risk that special categories of data may be inadvertently collected through free-text responses. In such cases, an article 9 ground would be required, and the only applicable ground in this context would be explicit consent [^23] from the data subjects. This however may prove to be an issue, which will be further discussed in Section 3.3. Therefore, it is essential to minimize the collection of special categories of data and implement measures to prevent their inadvertent collection.
+The intent is for no special categories of personal data to be collected. As such, Article 9 of the GDPR should not apply. However, as previously noted, there is a risk that special categories of data may be inadvertently collected through free-text responses. In such cases, an Article 9 ground would be required, and the only applicable ground in this context would be explicit consent [^23] from the data subjects. This however may prove to be an issue, which will be further discussed in Section 3.3. Therefore, it is essential to minimize the collection of special categories of data and implement measures to prevent their inadvertent collection.
 
-[^22]: @GDPR, art. 6(1)(f).
-[^23]: @GDPR, art. 9(2)(a).
+[^22]: @GDPR, art. 6(1)(f) and recital 47.
+[^23]: @GDPR, art. 9(1) and art. 9(2)(a).
 
 ## Application of its criteria
 
