@@ -1,0 +1,284 @@
+---
+title: "Report Data Protection for Business Monitor"
+author: "Group 16: Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek, Tycho van Rooij"
+subtitle: "JM0160 Intellectual Property and Privacy, Assignment #1: Privacy & Data Protection Law"
+format:
+  pdf:
+    include-in-header:
+      text: |
+        \usepackage{placeins}
+geometry:
+  - top=1.5cm
+  - bottom=1.8cm
+  - left=1.8cm
+  - right=1.8cm
+editor: visual
+toc: true
+lof: true
+number-sections: true
+bibliography: references.bib
+link-citations: true
+indent: true
+---
+
+**Total word count (Sections 1 to 4, excluding footnotes):** \[ \]
+
+# Introduction and Description
+
+## Learning Benchmarking Tool
+
+Business Monitor developed the Learning Benchmarking Tool (LBT) to support organisations in evaluating and comparing the effectiveness of their learning programmes.[^1] The tool applies the Kirkpatrick framework to measure learning effectiveness across four levels: Reaction (L1), Learning (L2), Behaviour (L3), and Results (L4).[^2]
+
+[^1]: [@BusinessMonitor2026, p. 4]
+
+[^2]: [@BusinessMonitor2026, pp. 4, 11-12]
+
+The original LBT was developed as a proof of concept using a fully synthetic organisational dataset.[^3] Its data structures include both programme-level and participant-level data and were designed to be compatible with future real organisational data.[^4] The current MVP therefore demonstrates the analytical logic without processing real participant data. The original project identifies piloting with real organisational data as a next step towards an operational benchmarking service.[^5]
+
+[^3]: [@BusinessMonitor2026, p. 4]
+
+[^4]: [@BusinessMonitor2026, p. 10]
+
+[^5]: [@BusinessMonitor2026, pp. 27-29]
+
+For the purpose of this data protection assessment, an operational scenario is considered in which Business Monitor administers participant surveys on behalf of participating organisations.[^6] Business Monitor therefore initially processes the participant information required to invite participants and administer the surveys. After collection, participant-level survey and learning data are pseudonymised for analytical processing.
+
+[^6]: This is an operational assumption adopted for the present data protection assessment. The original LBT report assumes that participating organisations submit aggregated or pseudonymised data and does not specify that Business Monitor itself administers participant surveys; see @BusinessMonitor2026, p. 29.
+
+Business Monitor temporarily retains the mapping between participant identities and pseudonymous identifiers to enable necessary follow-up measurements, including Kirkpatrick Level 3 (Behaviour). Identifying information and the re-identification mapping are stored separately from the analytical dataset, with access restricted to authorised personnel.[^7] Once the survey cycle, including required follow-up measurements, has been completed and re-identification is no longer necessary, the identifying information and mapping are deleted in accordance with the retention policy.[^8]
+
+[^7]: [@GDPR, art 4(5)]
+
+[^8]: [@GDPR, art 5(1)(e)]
+
+These data are subsequently used to calculate programme-level indicators across the four Kirkpatrick levels. The original MVP already aggregates programme- and participant-level data into comparable KPIs and benchmarking outputs.[^9] For the operational scenario assessed in this report, the analytical functionality is extended to programme-level predictive models intended to predict learning outcomes and KPIs rather than the performance, behaviour, or capabilities of individual participants.[^10]
+
+[^9]: [@BusinessMonitor2026, pp. 11-13]
+
+[^10]: This programme-level predictive functionality is an assumption for the intended operational LBT. In the original MVP, the Random Forest and Gradient Boosting models are described as explanatory rather than predictive and are used to identify the importance of design and contextual variables in explaining KPI variation; see @BusinessMonitor2026, p. 12.
+
+The resulting programme-level data can contribute to cross-organisational benchmarking. This is consistent with the LBT value proposition, in which Business Monitor acts as a neutral hub that aggregates learning evaluation data to enable comparisons across participating organisations.[^11] Benchmark results presented to customers are intended to be aggregated and anonymised.
+
+[^11]: [@BusinessMonitor2026, pp. 6-7]
+
+# How Are the Data Processed?
+
+## Purpose of the processing
+
+The LBT involves five processing operations, each with its own purpose: survey administration; participant-level learning analysis; programme-level calculation of the Kirkpatrick L1 to L4 indicators; programme-level predictive analytics; and cross-organisational benchmarking.[^12] Under the working hypothesis of Section 1, the first four serve the participating organisation's evaluation of its own programmes, with Business Monitor acting on its behalf. Benchmarking serves a different aim: Business Monitor's service to multiple organisations.
+
+[^12]: Operations two and three are closely linked and may be merged after review. They are kept separate here because only the former processes personal data at participant level.
+
+## Application of the data protection principles
+
+### Lawfulness, fairness and transparency
+
+Lawfulness is assessed in Section 3. Fairness and transparency are tested here, because the employment relationship leaves participants little real choice about taking part.[^13] Processing is unfair if participants cannot foresee that their answers also feed a commercial benchmark. If Business Monitor obtains contact details from the employer rather than from the participant, it must inform participants at the latest at the first contact, the survey invitation;[^14] information on the answers collected from participants themselves falls under Article 13.[^15] The information must be concise, intelligible and in plain language,[^16] name each controller and state each purpose, including benchmarking.[^17] A further purpose must be notified before that processing starts.[^18] Without such notice, the reasonable expectations on which the Article 6(4) assessment below depends cannot be met.
+
+[^13]: [@GDPR, art. 5(1)(a) and recital 39.]
+
+[^14]: [@GDPR, art. 14(1) and (3)(b).]
+
+[^15]: [@GDPR, art. 13(1).]
+
+[^16]: [@GDPR, art. 12(1).]
+
+[^17]: [@GDPR, art. 13(1)(a) and (c), art. 14(1)(a) and (c).]
+
+[^18]: [@GDPR, art. 13(3).]
+
+### Purpose limitation
+
+Article 5(1)(b) GDPR requires specified, explicit and legitimate purposes and prohibits further processing that is incompatible with them.[^19] Benchmarking is the critical transition: participants provide data for their employer's evaluation, and the data later feed a product used by other organisations.
+
+[^19]: [@GDPR, art. 5(1)(b).]
+
+Compatibility depends on the factors in Article 6(4).[^20] The link is strong, since benchmarking uses the same indicators for the same evaluative aim. The context is weaker: employees expect their employer to evaluate a programme, not that their answers inform a commercial comparison between companies, and the employment relationship limits their real choice.
+
+[^20]: [@GDPR, art. 6(4).]
+
+Article 5(1)(b) offers a second route: further processing for statistical purposes is not considered incompatible, in accordance with Article 89(1). Under Recital 162 the result must be aggregate data not used in support of decisions regarding a particular natural person,[^21] which fits the programme-level design of the LBT. This route supports the Article 6(4) assessment but does not replace it. Benchmarking is therefore compatible only if participants are told in advance, outputs are demonstrably aggregate, and no output is used for decisions about individuals.
+
+[^21]: [@GDPR, art. 5(1)(b), art. 89(1) and recital 162.]
+
+### Data minimisation
+
+Article 5(1)(c) limits data to what is necessary for each purpose.[^22] Directly identifying data are needed only for survey administration; analysis needs the pseudonymous identifier and the measured variables. The original data model also holds participant-level variables such as location, a manager-support rating and a promotion flag.[^23] Each must be shown to be necessary; the promotion flag in particular records an employment outcome, whereas the indicator needs only a programme-level count. Free-text fields should be avoided, as they invite unnecessary or special-category data.
+
+[^22]: [@GDPR, art. 5(1)(c).]
+
+[^23]: [@BusinessMonitor2026, p. 33.]
+
+### Accuracy
+
+Article 5(1)(d) requires data to be accurate and, where necessary, up to date.[^24] Most LBT indicators rest on self-reported Likert scores, which the original report itself describes as subject to response bias,[^25] and follow-up measurements link responses over time through the pseudonymous identifier.
+
+[^24]: [@GDPR, art. 5(1)(d).]
+
+[^25]: [@BusinessMonitor2026, p. 18.]
+
+### Storage limitation
+
+Article 5(1)(e) allows identifiable data to be kept only as long as necessary.[^26] The three data layers need different periods. Identification data and the mapping are necessary only until the last follow-up measurement of the survey cycle and must then be deleted, as the case definition provides. Deleting the mapping can make the analytical data anonymous, but only if neither Business Monitor nor any other person could still identify participants by means reasonably likely to be used.[^27] That is doubtful where the participating organisation knows who attended a programme, and in small cohorts, such as the original design's minimum of eight participants, where combinations of contextual variables can single people out.[^28] Only aggregated outputs with a sufficient minimum cohort size can reliably fall outside the GDPR.
+
+[^26]: [@GDPR, art. 5(1)(e).]
+
+[^27]: [@GDPR, recital 26.]
+
+[^28]: [@BusinessMonitor2026, pp. 13-14.]
+
+### Integrity and confidentiality
+
+Article 5(1)(f) requires appropriate security.[^29] Business Monitor would hold identifiable contact data and the key that reverses pseudonymisation. Stored next to the analytical data, that key would make pseudonymisation largely pointless, because Article 4(5) requires additional information to be kept separately and protected. Access should be limited to the staff who administer the survey.
+
+[^29]: [@GDPR, art. 5(1)(f) and art. 32(1).]
+
+### Accountability
+
+Article 5(2) makes the controller responsible for demonstrating compliance:[^30] the participating organisation, and Business Monitor for benchmarking if it is controller there. The agreements and records proposed in Section 4 should allocate these responsibilities.
+
+[^30]: [@GDPR, art. 5(2).]
+
+# On Which Legal Basis?
+
+## The processing ground relied on
+
+As already noted in previous sections, there are two distinct processing purposes in the operational LBT scenario. The first purpose is the participating organisation's evaluation of its own learning programmes, for which Business Monitor acts as a processor. The second purpose is Business Monitor's cross-organisational benchmarking service, which may involve Business Monitor acting as a controller. For both purposes, the processing ground relied on is legitimate interests under Article 6(1)(f) GDPR [^31]. This ground is appropriate because the processing is necessary for the legitimate interests of both the participating organisation and Business Monitor, and these interests are not overridden by the rights and freedoms of the data subjects, as required by the balancing test in Article 6(1)(f) and recital 47.[^32]
+
+[^31]: [@GDPR, art. 6(1)(f) and recital 47.]
+
+[^32]: [@GDPR, art. 6(1)(f) and recital 47.]
+
+The intent is for no special categories of personal data to be collected. As such, Article 9 of the GDPR should not apply. However, as previously noted, there is a risk that special categories of data may be inadvertently collected through free-text responses. In such cases, an Article 9 ground would be required, and the only applicable ground in this context would be explicit consent [^33] from the data subjects. This however may prove to be an issue, which will be further discussed in Section 3.3. Therefore, it is essential to minimize the collection of special categories of data and implement measures to prevent their inadvertent collection.
+
+[^33]: [@GDPR, art. 9(1) and art. 9(2)(a).]
+
+## Application of its criteria
+
+### Organizational evaluation
+
+For this use case, the legitimate interest is for the participating organisation to evaluate the effectiveness of its employee training/learning programmes, which is a credible interest in the context of organisational development and human resource management. The processing of the relevant data is necessary to achieve this purpose; contact details are required to administer the survey to participants, and the (pseudonymised) survey responses and learning measurements are necessary to calculate and assess the effectiveness of the learning programmes. It may be possible to achieve the same purpose with less data, for example by using aggregated data or true anonymisation. Whether this impacts the ability to evaluate the effectiveness of the learning programmes depends on the nature of the program itself and the intended evaluation of the participating organisation. In general, it would be reasonable for participating employees to expect their employer to evaluate the learning programme(s) they participated in, though given the employment relationship, they may have limited choice in whether or not to participate. Therefore, it is important for the participating organisation to provide clear and transparent information to participants about the purpose of the data processing, the types of data collected, and how their data will be used in the evaluation process. This can help ensure that participants are aware of their rights and can make informed decisions about their participation. The pseudonymisation of the data already helps mitigate some of the impact on participants, though pseudonymisation does not make the data unidentifiable and therefore does not remove the need for appropriate safeguards and transparency.
+
+### Business Monitor's benchmarking service
+
+For the second use case, the legitimate interest is for Business Monitor to provide a benchmarking service to multiple organisations, which is a credible (albeit arguably weaker) legitimate interest in the context of providing a commercial service. The processing of data from multiple organisations' learning programmes is necessary to achieve this purpose, as it allows for the aggregation and comparison of data to generate meaningful benchmarks. The intent is for the benchmarking outputs to be aggregated, which helps mitigate the impact on participants. However, there is still a risk of re-identification, particularly in small cohorts, when contextual variables are included in the analysis, or when the participating organisations hold information that could be used to identify individuals. True anonymisation should be considered as it would further mitigate this risk, though it would have to be balanced against its impact on the ability to generate meaningful benchmarks. Both Business Monitor and the participating organisations should be transparent about the purpose of the benchmarking service, the types of data collected, and how the data will be used in the benchmarking process. Additionally, Business Monitor should implement appropriate technical and organisational measures to prevent re-identification and ensure that the rights and freedoms of participants are respected. While employees may reasonably expect their employer to evaluate the learning programme(s) they participated in, it would not be reasonable for them to expect that their data would additionally be used for a commercial benchmarking service. Therefore, it is important for Business Monitor to provide a clear notice in advance to participants about the benchmarking purpose, the data collected, the measures in place (including pseudonymisation, aggregation, potential anonymisation, and any other technical and organisational safeguards), and how their data will be used in the benchmarking process. This can help ensure that participants are aware of their rights and can make informed decisions about their participation.
+
+## Problems with relying on this ground
+
+In general, while legitimate interests can provide a lawful basis for processing, it tends to be more difficult to justify compared to other grounds. A proper balancing test must be conducted to ensure that the legitimate interests of the controller do not override the rights and freedoms of the data subjects. This requires careful consideration of the potential risks and impacts on participants, as well as the implementation of appropriate safeguards to protect their personal data. Even then, the reliance on legitimate interests may be challenged if participants feel that their rights have been infringed upon or if they were not adequately informed about the processing activities. Therefore, it is essential for both the participating organisations and Business Monitor to maintain transparency, provide clear information, and implement robust data protection measures to ensure compliance with GDPR requirements. Most other grounds laid out in Article 6(1) [^34] do not apply to either processing purpose. This includes compliance with a legal obligation, protecting vital interests, and public interest or official authority. Contractual necessity does not apply either, as the processing of data for the purposes of learning programme evaluation and benchmarking is not strictly necessary for the performance of a contract between the employee and employer. Consent could be considered, but it is not a reliable ground in the context of an employment relationship, where there may be a power imbalance and employees may feel pressured to consent. Therefore, legitimate interests remains the most appropriate ground for processing in this scenario, again provided that the necessary safeguards and transparency measures are implemented to protect the rights and freedoms of the data subjects. As mentioned in Section 3.1, the processing of special categories of personal data under Article 9 of the GDPR would require explicit consent from the data subjects, as none of the other grounds in Article 9(2) apply. However, the same problems with article 6's consent ground apply to article 9's explicit consent ground [^35]. As such, it would be best to avoid the collection of special categories of personal data altogether, and to implement measures to prevent their inadvertent collection, such as avoiding free-text fields in surveys and providing clear instructions to participants about the types of information that should not be included in their responses.
+
+[^34]: [@GDPR, art. 6(1).]
+
+[^35]: [@GDPR, art. 9(1) and art. 9(2)(a).]
+
+# Advice
+
+## Alternatives to personal data
+
+Business Monitor should minimise personal data processing by using aggregated programme-level data wherever possible. Although participant-level information is necessary for survey administration, follow-up measurements and the calculation of certain learning indicators, identifiable participant-level data are not required in final benchmarking outputs or programme-level predictions.[^36]
+
+[^36]: [@GDPR, art. 5(1)(c).]
+
+Survey data should be pseudonymised as early as practicable. The mapping between participant identities and pseudonymous identifiers should remain separate from the analytical dataset, with access restricted to authorised personnel.[^37] The mapping and associated identifying information should be deleted once the survey cycle, including necessary follow-up measurements, has been completed and re-identification is no longer required.[^38] However, deleting the mapping does not automatically make the remaining analytical data anonymous, particularly when contextual information could enable re-identification.
+
+[^37]: [@GDPR, art. 4(5).]
+
+[^38]: [@GDPR, art. 5(1)(e).]
+
+Business Monitor should also consider collecting selected learning indicators directly at programme level, while avoiding unnecessary demographic attributes and unrestricted free-text responses. Benchmarking outputs should be anonymised before disclosure to customers, taking account of small cohorts and combinations of attributes that could identify participants. Aggregation alone does not establish anonymity, which depends on whether individuals remain identifiable by means reasonably likely to be used[^39].
+
+[^39]: [@GDPR, recital 26.]
+
+## Technical and organisational measures
+
+The risks identified in Section II require safeguards addressing transparency, retention, access control, re-identification and accountability.
+
+First, the purposes of organisational evaluation and cross-organisational benchmarking should be communicated separately. Survey invitations and privacy notices should explain the intended processing, the categories of data collected, the relevant controllers and the use of information for benchmarking. Employees should not be expected to infer the commercial benchmarking purpose from information about their employer's learning evaluation.[^40]
+
+[^40]: [@GDPR, arts. 5(1)(a) and 13.]
+
+Second, Business Monitor should establish a documented retention schedule for each data layer. Identifying information and the re-identification mapping should be deleted after the final necessary follow-up measurement, with deletion recorded. Pseudonymised analytical records require a separately justified retention period and periodic review. Programme-level outputs may be retained independently where their anonymity has been adequately established.
+
+Third, identifying information and the mapping should be stored separately from analytical data and protected through encryption, role-based access controls and access logging. Access to re-identification information should be limited to authorised personnel responsible for survey administration. Analytical access should likewise be restricted according to operational responsibilities.[^41]
+
+[^41]: [@GDPR, art. 32(1)(a)-(b).]
+
+Fourth, Business Monitor should establish disclosure controls for benchmarking results, including minimum cohort sizes, suppression of small groups and assessment of potentially identifying combinations of attributes. The original LBT design uses a minimum of eight participants, but this threshold should be evaluated rather than assumed sufficient to prevent re-identification.[^42] Equivalent controls should apply to programme-level predictive outputs.
+
+[^42]: [@BusinessMonitor2026, pp. 13-14.]
+
+MooFinally, accountability measures should be established before operational deployment. These include documented data protection by design and by default, processor agreements where Business Monitor acts under participating organisations' instructions, records of processing activities and an assessment of whether a Data Protection Impact Assessment is required.[^43] These requirements should be incorporated into operational procedures and reviewed as the service develops.
+
+[^43]: [@GDPR, arts. 25, 28(3), 30 and 35]
+
+## Conclusion on compliance
+
+The existing LBT proof of concept uses synthetic data and does not establish GDPR compliance for an operational service involving real participants. The proposed operational scenario processes personal data and must therefore satisfy the applicable GDPR requirements before deployment.
+
+Two processing purposes require separate assessment. For organisational learning evaluation, the participating organisation is expected to act as controller, while Business Monitor acts as processor under its instructions. For cross-organisational benchmarking, Business Monitor may act as an independent controller where it determines the purpose and essential means of processing. These roles must be documented for each activity.[^44]
+
+[^44]: [@GDPR, arts. 4(7), 4(8) and 28.]
+
+Section III identifies legitimate interests as the proposed legal basis for both purposes.[^45] However, the balancing assessment is more difficult for commercial benchmarking because employees may reasonably expect learning evaluation by their employer without anticipating secondary use across organisations. The necessity and proportionality of this additional processing must therefore be demonstrated through a separate, documented assessment. Transparency and technical safeguards can reduce the impact on participants but cannot independently establish a lawful basis.
+
+[^45]: [@GDPR, art. 6(1)(f).]
+
+Business Monitor should avoid collecting special categories of personal data unless an applicable Article 9 exception and the other necessary legal requirements have been established.[^46] Survey design should minimise the risk of collecting such information inadvertently.
+
+[^46]: [@GDPR, art. 9.]
+
+The recommended approach is conditional deployment. Processing real participant data should proceed only after the respective responsibilities and lawful bases have been established, appropriate safeguards are operational and the risk of re-identification has been adequately addressed. If these conditions cannot be satisfied, Business Monitor should restrict the affected activities to genuinely anonymous or non-personal programme-level data, or postpone deployment until the outstanding compliance requirements have been resolved.
+
+## Alternatives to personal data
+
+Business Monitor should minimise the processing of personal data by using aggregated programme-level data wherever possible. Although participant-level information is needed for survey administration and follow-up measurements, it is not required for the final benchmarking outputs or programme-level predictions.[^47]
+
+[^47]: [@GDPR, art. 5(1)(c)]
+
+Participant-level survey data should be pseudonymised as early as practicable. The mapping between participant identities and pseudonymous identifiers should be stored separately and retained only for the duration necessary to complete the survey cycle, including required follow-up measurements.[^48] Once re-identification is no longer necessary, the mapping and associated identifying information should be deleted.[^49]
+
+[^48]: [@GDPR, art. 4(5)]
+
+[^49]: [@GDPR, art. 5(1)(e)]
+
+Business Monitor should also consider collecting selected learning indicators directly at programme level, avoiding unnecessary demographic attributes and unrestricted free-text responses. Benchmarking results should be anonymised before disclosure to customers, with particular attention to small cohorts and combinations of attributes that could permit re-identification. Aggregation alone does not guarantee anonymity.[^50]
+
+[^50]: [@GDPR, recital 26]
+
+## Technical and organisational measures
+
+The risks identified in Section 2 lead to five measures.
+
+*Specify the benchmarking purpose.* The invitation should state the benchmarking purpose separately, as set out in Section 2.2.1.
+
+*Tie retention to purpose.* A written schedule should set a period for each data layer. Identification data and the mapping are deleted after the last follow-up wave and the deletion is logged; analytical data have a defined maximum period and periodic review.
+
+*Separate and protect identity data.* Identity data and the mapping are stored apart from the analytical dataset, encrypted, with the key held separately and access restricted by role and logged.[^51]
+
+[^51]: [@GDPR, art. 32(1)(a)-(b).]
+
+*Prevent re-identification.* A minimum cohort size applies to every benchmark output, small groups are suppressed, and the eight-participant threshold of the original design is tested for sufficiency.[^52]
+
+[^52]: [@BusinessMonitor2026, pp. 13-14.]
+
+*Document the processing.* Data protection by design and by default,[^53] a processor agreement between each organisation and Business Monitor,[^54] records of processing,[^55] and a documented DPIA screening before operation,[^56] because employee data from several organisations are combined.
+
+[^53]: [@GDPR, art. 25(1)-(2).]
+
+[^54]: [@GDPR, art. 28(3).]
+
+[^55]: [@GDPR, art. 30.]
+
+[^56]: [@GDPR, art. 35.]
+
+## Conclusion on compliance
+
+*Person C, settled jointly. Is the project GDPR compliant, and what is the way forward.*
+
+Outline: - Distinguish between current implementation and intended operational scenario. The current implementation uses synthentic data, and is therefore not subject to GDPR(?). The intended operational scenario uses real participant data, and is therefore subject to GDPR. It is not inherently compliant; this depends on resolving the issues identified and implementing the safeguards and other measures recommended in prior sections. - Distinguish the two purposes and their responsibilities. The participating organisation is controller for the evaluation of its own programmes, and Business Monitor is processor. Business Monitor may be controller for the benchmarking service, depending on whether it determines the purpose and essential means of that processing. - The processing ground relied on is legitimate interests under Article 6(1)(f) GDPR. For the second purpose, the balancing test is not as clearly satisfied, as the cross-organisational benchmarking purpose is not as clearly aligned with the reasonable expectations of participants. Proper notice and transparency are therefore essential, and the safeguards recommended in Section 4.2 must be implemented. The processing of special categories of personal data under Article 9 GDPR would require explicit consent, which is not a reliable ground in the context of an employment relationship. - Provide a pratical way forward, including what measures and safeguards are to be implemented to ensure compliance and mitigate risks. - Recommend proceeding only if the above is properly implemented and operational. If sufficient safeguards cannot be implemented, consider proceeding with only aggregated or anonymised data, or not proceeding at all.
+
+# Technology Statement {.unnumbered}
+
+During the preparation of this work, we used ChatGPT (GPT-5) and Claude (Sonnet 5.5) in order to improve documentation quality and enhance writing clarity. The following parts of the assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen and Stefan Vonk evaluated the validity of the tool's outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de Rijk, Gilbert Laanen and Stefan Vonk take(s) full responsibility for the content of their work.
+
+# References {.unnumbered}
