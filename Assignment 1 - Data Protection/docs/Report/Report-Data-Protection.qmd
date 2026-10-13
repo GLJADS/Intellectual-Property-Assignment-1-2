@@ -32,7 +32,9 @@ link-citations: true
 indent: true
 ---
 
-**Total word count (Sections 1 to 4, excluding footnotes):** \[ \]
+**Total word count (Sections 1 to 4, excluding footnotes):** 2481
+
+\newpage
 
 # Introduction and Description
 
