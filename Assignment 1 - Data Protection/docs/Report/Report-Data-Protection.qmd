@@ -50,21 +50,21 @@ The original LBT is a proof of concept based on fully synthetic programme- and p
 
 [^3]: [@BusinessMonitor2026, pp. 27-29]
 
-This assessment considers an operational scenario in which Business Monitor administers participant surveys on behalf of participating organisations.[^4] It initially processes identifiable contact information to invite participants and manage surveys. After collection, participant-level survey and learning data are pseudonymised for analysis.
+This assessment considers an operational scenario in which Business Monitor administers participant surveys on behalf of participating organisations. This is an assumption: the original report envisages organisations submitting aggregated or pseudonymised data and does not specify that Business Monitor administers surveys.[^4] It initially processes identifiable contact information to invite participants and manage surveys. After collection, participant-level survey and learning data are pseudonymised for analysis.
 
-[^4]: This survey-administration role is an assumption for this assessment. The original report envisages organisations submitting aggregated or pseudonymised data, without specifying that Business Monitor administers surveys; see @BusinessMonitor2026, p. 29.
+[^4]: [@BusinessMonitor2026, p. 29]
 
-Business Monitor retains the identity-to-pseudonym mapping only as needed for the survey cycle, including Level 3 follow-up measurements. Identifying information and the mapping are stored separately from analytical data, with restricted access.[^5] They are deleted when re-identification is no longer necessary, according to the retention policy.[^6]
+Business Monitor retains the identity-to-pseudonym mapping only as needed for the survey cycle, including Level 3 follow-up measurements. Identifying information and the mapping are stored separately from analytical data, with restricted access, safeguards assumed in this assessment.[^5] They are deleted when re-identification is no longer necessary, according to the retention policy.[^6]
 
-[^5]: Pseudonymisation is defined in [@GDPR, art. 4(5)]. Separate storage and restricted access are operational safeguards assumed in this assessment.
+[^5]: [@GDPR, art. 4(5)]
 
 [^6]: [@GDPR, art. 5(1)(e)]
 
-Pseudonymised data are used to calculate programme-level KPIs across L1–L4. The original MVP includes an exploratory prediction model using synthetic data.[^7] In the assessed operational scenario, predictive analytics remain limited to programme-level outcomes and KPIs, not individual employee performance, behaviour, or capabilities.[^8]
+Pseudonymised data are used to calculate programme-level KPIs across L1–L4. The original MVP includes an exploratory prediction model using synthetic data.[^7] In the assessed operational scenario, predictive analytics remain limited to programme-level outcomes and KPIs, not individual employee performance, behaviour, or capabilities. This is an assumption: the original model only demonstrates exploratory scenario predictions, not validated predictions on real organisational data.[^8]
 
 [^7]: [@BusinessMonitor2026, pp. 12, 27-28]
 
-[^8]: Programme-level application is an operational assumption for this assessment. The original model demonstrates exploratory scenario predictions rather than validated predictions using real organisational data; see @BusinessMonitor2026, pp. 12, 27-28.
+[^8]: [@BusinessMonitor2026, pp. 12, 27-28]
 
 Programme-level results support cross-organisational benchmarking, consistent with Business Monitor's proposed role as a neutral benchmarking hub.[^9] Customer-facing outputs are intended to be aggregated and anonymised.
 
@@ -144,9 +144,9 @@ Article 5(2) requires controllers to demonstrate compliance.[^25] Participating 
 
 ## The processing ground relied on
 
-The operational LBT involves two purposes requiring separate legal assessments. Participating organisations evaluate their learning programmes, with Business Monitor processing data on their behalf. Business Monitor may independently determine the purposes of cross-organisational benchmarking and therefore act as controller for that activity.[^26]
+The operational LBT involves two purposes requiring separate legal assessments, and the roles follow from who determines the purposes and means of each.[^26] A controller determines why and how personal data are processed; a processor acts only on the controller's instructions. The participating organisation decides to evaluate its own programmes, so it is controller for that purpose, with Business Monitor as its processor administering surveys and analysing results on its instructions. Benchmarking serves Business Monitor's own commercial service. A processor that determines purposes and means is considered a controller for that processing, so Business Monitor acts as controller for benchmarking where it designs the service and decides how the data are combined. If the participating organisation co-determines these purposes and means, both are joint controllers and must allocate responsibilities between them. If it merely supplies data to a service that Business Monitor designs, they are separate controllers, and the organisation's disclosure of data for that purpose needs its own legal basis.
 
-[^26]: [@GDPR, arts. 4(7), 4(8) and 28(3)]
+[^26]: [@GDPR, arts. 4(7), 4(8), 26(1), 28(3) and 28(10)]
 
 For both purposes, legitimate interests under Article 6(1)(f) GDPR is the proposed legal basis. It requires a legitimate interest, necessity of processing, and a balancing assessment demonstrating that participants' interests and fundamental rights do not override that interest.[^27] Recital 47 specifically requires consideration of participants' reasonable expectations. Consequently, legitimate interests cannot be presumed valid merely because the processing benefits the organisation.
 
@@ -214,7 +214,13 @@ Where participant-level processing remains necessary, survey responses should be
 
 Unnecessary demographic attributes and unrestricted free-text responses should be avoided. Before releasing benchmark results, Business Monitor must assess whether participants could be identified through small cohorts, rare characteristics or combinations of variables. Aggregation alone does not guarantee anonymity.[^37] Where genuinely anonymous inputs can achieve the benchmarking purpose, they offer a less intrusive alternative to processing personal data.
 
+For benchmarking, Business Monitor could therefore act as the participating organisation's processor and compute anonymous programme-level aggregates on its instructions, so that only those aggregates enter the benchmark pool. Anonymous data fall outside the GDPR,[^37a] and the benchmark itself would then need no separate legal basis. The anonymisation step is itself processing of personal data and must be covered by the organisation's legal basis and instructions,[^37b] and the anonymity of its output must be tested as described above.
+
 [^37]: [@GDPR, recital 26]
+
+[^37a]: [@GDPR, recital 26]
+
+[^37b]: [@GDPR, arts. 4(2) and 28(3)]
 
 ## Technical and organisational measures
 
@@ -242,11 +248,11 @@ Finally, accountability arrangements must be established before operational depl
 
 ## Conclusion on compliance
 
-The current LBT proof of concept uses synthetic data and does not demonstrate GDPR compliance for an operational service involving real participants. Such deployment would require a documented legal and organisational framework before personal data are processed.
+The current LBT proof of concept uses synthetic data and does not demonstrate GDPR compliance for an operational service involving real participants. Such deployment would require a documented legal and organisational framework before personal data are processed. On the present facts, the operational LBT cannot yet be regarded as GDPR compliant. Organisational evaluation can be made compliant through a documented legitimate interests assessment, transparency and the safeguards in Section 4. Cross-organisational benchmarking remains doubtful unless necessity and a favourable balance are shown; otherwise it should rely on anonymous programme-level inputs.
 
-Two purposes must be assessed separately. Participating organisations are expected to act as controllers for their own programme evaluations, with Business Monitor acting as processor. Business Monitor may independently act as controller for cross-organisational benchmarking where it determines the purposes and essential means.[^43] These responsibilities must be documented for each processing activity.
+Two purposes must be assessed separately, with different roles (Section 3.1). Participating organisations are controllers for their own programme evaluations, with Business Monitor as processor. For cross-organisational benchmarking Business Monitor acts as controller, possibly jointly with the participating organisations.[^43] These responsibilities must be documented for each processing activity.
 
-[^43]: [@GDPR, arts. 4(7), 4(8) and 28]
+[^43]: [@GDPR, arts. 4(7), 4(8), 26(1), 28(3) and 28(10)]
 
 Legitimate interests under Article 6(1)(f) is the proposed legal basis, but its suitability remains conditional.[^44] Organisational evaluation may be justified where processing is necessary and proportionate. Commercial benchmarking presents a greater challenge because participants may not reasonably expect their responses to support a service across organisations. A separate, documented assessment must establish necessity, purpose compatibility and a favourable balancing outcome. Transparency and safeguards cannot independently establish lawfulness.
 
@@ -260,6 +266,6 @@ The recommended approach is conditional deployment. Real participant data should
 
 # Technology Statement {.unnumbered}
 
-During the preparation of this work, we used ChatGPT (GPT-5) and Claude (Sonnet 5.5) in order to improve documentation quality, help with reducing the number of words and enhance writing clarity. The following parts of the assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen and Stefan Vonk evaluated the validity of the tool's outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de Rijk, Gilbert Laanen and Stefan Vonk take(s) full responsibility for the content of their work.
+During the preparation of this work, we used ChatGPT (GPT-5) and Claude (Sonnet 5.5) in order to improve documentation quality, help with reducing the number of words and enhance writing clarity. The following parts of the assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek and Tycho van Rooij evaluated the validity of the tool's outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek and Tycho van Rooij take full responsibility for the content of their work.
 
 # References {.unnumbered}
