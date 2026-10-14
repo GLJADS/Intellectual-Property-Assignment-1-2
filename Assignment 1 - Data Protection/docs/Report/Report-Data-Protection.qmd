@@ -70,6 +70,12 @@ Programme-level results support cross-organisational benchmarking, consistent wi
 
 [^9]: [@BusinessMonitor2026, pp. 6-7]
 
+## Data subjects and applicable regime
+
+The data subjects are the employees who attend the learning programmes evaluated through the LBT. Their contact details are personal data, as are their pseudonymised survey responses and learning measurements. Whether pseudonymised data are personal data depends on whether the party processing them has means reasonably likely to re-identify the individual.[^a] Business Monitor holds the mapping during the survey cycle and the employer knows who attended, so that is the case here. The GDPR therefore applies to the operational scenario, but not to the synthetic-data MVP. No special-category data are intended to be collected (Section 3). The roles differ per purpose and are reasoned in Section 3.1.
+
+[^a]: [@GDPR, arts. 4(1) and 4(5) and recital 26; @EDPSvSRB2025, paras. 85-87]
+
 # How Are the Data Processed?
 
 ## Purpose of the processing
@@ -144,13 +150,21 @@ Article 5(2) requires controllers to demonstrate compliance.[^25] Participating 
 
 ## The processing ground relied on
 
-The operational LBT involves two purposes requiring separate legal assessments, and the roles follow from who determines the purposes and means of each.[^26] A controller determines why and how personal data are processed; a processor acts only on the controller's instructions. The participating organisation decides to evaluate its own programmes, so it is controller for that purpose, with Business Monitor as its processor administering surveys and analysing results on its instructions. Benchmarking serves Business Monitor's own commercial service. A processor that determines purposes and means is considered a controller for that processing, so Business Monitor acts as controller for benchmarking where it designs the service and decides how the data are combined. If the participating organisation co-determines these purposes and means, both are joint controllers and must allocate responsibilities between them. If it merely supplies data to a service that Business Monitor designs, they are separate controllers, and the organisation's disclosure of data for that purpose needs its own legal basis.
+The operational LBT involves two purposes requiring separate legal assessments, and the roles follow from who determines the purposes and means of each.[^26] A controller determines why and how personal data are processed; a processor acts only on the controller's instructions. The participating organisation decides to evaluate its own programmes, so it is controller for that purpose, with Business Monitor as its processor administering surveys and analysing results on its instructions. Benchmarking serves Business Monitor's own commercial service. A processor that determines purposes and means is considered a controller for that processing,[^b] so Business Monitor acts as controller for benchmarking where it designs the service and decides how the data are combined. Roles follow from the actual influence on purposes and means, not from the contract label.[^c] If the participating organisation co-determines these purposes and means, both are joint controllers and must allocate responsibilities between them. Joint control is assessed per operation: a party is a joint controller only for the operations whose purposes and means it determines together with another.[^d] If it merely supplies data to a service that Business Monitor designs, they are separate controllers, and the organisation's disclosure of data for that purpose needs its own legal basis.[^e]
 
 [^26]: [@GDPR, arts. 4(7), 4(8), 26(1), 28(3) and 28(10)]
 
-For both purposes, legitimate interests under Article 6(1)(f) GDPR is the proposed legal basis. It requires a legitimate interest, necessity of processing, and a balancing assessment demonstrating that participants' interests and fundamental rights do not override that interest.[^27] Recital 47 specifically requires consideration of participants' reasonable expectations. Consequently, legitimate interests cannot be presumed valid merely because the processing benefits the organisation.
+[^b]: [@GDPR, art. 28(10); @EDPB2021, Part II, para. 150]
 
-[^27]: [@GDPR, art. 6(1)(f) and recital 47]
+[^c]: [@EDPB2021, Part I, para. 52]
+
+[^d]: [@GDPR, art. 26(1); @FashionID2019, para. 74; @EDPB2021, Part I, paras. 51-53]
+
+[^e]: [@EDPB2021, Part I, para. 70]
+
+For both purposes, legitimate interests under Article 6(1)(f) GDPR is the proposed legal basis. It requires three cumulative conditions: a legitimate interest, necessity of processing, and a balancing assessment demonstrating that participants' interests and fundamental rights do not override that interest.[^27] Necessity is interpreted strictly: the controller must check whether the aim can reasonably be achieved by less intrusive means. Recital 47 specifically requires consideration of participants' reasonable expectations. Consequently, legitimate interests cannot be presumed valid merely because the processing benefits the organisation.
+
+[^27]: [@GDPR, art. 6(1)(f) and recital 47; @TK2019, paras. 40 and 46-51, decided under the equivalent provision of Directive 95/46]
 
 ## Application of its criteria
 
