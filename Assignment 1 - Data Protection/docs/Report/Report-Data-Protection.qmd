@@ -32,7 +32,7 @@ link-citations: true
 indent: true
 ---
 
-**Total word count (Sections 1 to 4, excluding footnotes):** 2481
+**Total word count (Sections 1 to 4, excluding footnotes):** 2640
 
 \newpage
 
@@ -170,25 +170,25 @@ For both purposes, legitimate interests under Article 6(1)(f) GDPR is the propos
 
 ### Organisational evaluation
 
-Legitimate interest. Participating organisations have a legitimate interest in assessing learning effectiveness and improving training investments. Measuring satisfaction, knowledge acquisition, behavioural application and organisational outcomes supports this objective.
+__Legitimate interest.__ Participating organisations have a legitimate interest in assessing learning effectiveness and improving training investments. Measuring satisfaction, knowledge acquisition, behavioural application and organisational outcomes supports this objective.
 
-Necessity. Contact details enable survey invitations and follow-ups. Pseudonymised responses enable longitudinal analysis and programme-level KPI calculation. However, necessity must be established for each data category. Anonymous surveys or aggregated measurements may achieve some evaluation objectives with less interference, although they may not support participant-linked follow-ups. The organisation must therefore demonstrate why its chosen data are required rather than merely useful.[^28]
+__Necessity.__ Contact details enable survey invitations and follow-ups. Pseudonymised responses enable longitudinal analysis and programme-level KPI calculation. However, necessity must be established for each data category. Anonymous surveys or aggregated measurements may achieve some evaluation objectives with less interference, although they may not support participant-linked follow-ups. The organisation must therefore demonstrate why its chosen data are required rather than merely useful.[^28]
 
 [^28]: [@GDPR, art. 5(1)(c) and art. 6(1)(f)]
 
-Balancing. Employees may reasonably expect evaluation of training they attended, supporting the employer's interest. Nevertheless, the employment relationship creates a power imbalance. Responses concerning behaviour, managerial support or promotion could also affect employees if accessed or interpreted individually. Pseudonymisation, restricted access, limited retention and programme-level reporting reduce these risks but do not eliminate them.
+__Balancing.__ Employees may reasonably expect evaluation of training they attended, supporting the employer's interest. Nevertheless, the employment relationship creates a power imbalance. Responses concerning behaviour, managerial support or promotion could also affect employees if accessed or interpreted individually. Pseudonymisation, restricted access, limited retention and programme-level reporting reduce these risks but do not eliminate them.
 
 On these assumptions, legitimate interests may support organisational evaluation, provided participation requirements, data necessity and safeguards are assessed and documented. Individual employee assessment or employment decisions would require a separate assessment.
 
 ### Business Monitor's benchmarking service
 
-Legitimate interest. Business Monitor has a commercial interest in producing comparable learning-effectiveness benchmarks across participating organisations. A commercial interest can qualify under Article 6(1)(f), but does not automatically outweigh participants' rights.[^29]
+__Legitimate interest.__ Business Monitor has a commercial interest in producing comparable learning-effectiveness benchmarks across participating organisations. A commercial interest can qualify under Article 6(1)(f), but does not automatically outweigh participants' rights.[^29]
 
 [^29]: [@GDPR, art. 6(1)(f) and recital 47]
 
-Necessity. Cross-organisational comparison requires sufficiently consistent programme-level indicators. It does not necessarily require identifiable or pseudonymised participant records to be retained centrally. Business Monitor must assess whether participating organisations could instead supply anonymous programme-level aggregates. If these are sufficient, continued processing of personal data for benchmarking would be difficult to justify as necessary.
+__Necessity.__ Cross-organisational comparison requires sufficiently consistent programme-level indicators. It does not necessarily require identifiable or pseudonymised participant records to be retained centrally. Business Monitor must assess whether participating organisations could instead supply anonymous programme-level aggregates. If these are sufficient, continued processing of personal data for benchmarking would be difficult to justify as necessary.
 
-Balancing. Benchmarking creates a greater privacy concern than internal evaluation. Employees may expect their employer to assess training effectiveness, but not necessarily anticipate their responses contributing to another company's commercial service. Small cohorts, contextual variables and organisational knowledge increase re-identification risks. Aggregation and pseudonymisation mitigate these risks, provided anonymity is assessed rather than assumed.
+__Balancing.__ Benchmarking creates a greater privacy concern than internal evaluation. Employees may expect their employer to assess training effectiveness, but not necessarily anticipate their responses contributing to another company's commercial service. Small cohorts, contextual variables and organisational knowledge increase re-identification risks. Aggregation and pseudonymisation mitigate these risks, provided anonymity is assessed rather than assumed.
 
 Business Monitor should disclose the benchmarking purpose before processing, document the legitimate interests assessment, and ensure that benchmark outputs cannot reasonably identify participants. The Article 6(4) compatibility assessment discussed in Section 2 remains relevant where data are reused for a different purpose.[^30]
 
